@@ -21,6 +21,7 @@ defmodule Garden.Display do
 
   def handle_info(_message, state) do 
     # handle any unexpected messages
+    {:noreply, state}
   end
 
   defp format_text(temp, humidity) do
