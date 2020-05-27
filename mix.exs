@@ -5,7 +5,8 @@ defmodule Garden.Umbrella.MixProject do
     [
       apps_path: "apps",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      aliases: aliases()
     ]
   end
 
@@ -23,5 +24,9 @@ defmodule Garden.Umbrella.MixProject do
   # and cannot be accessed from applications inside the apps folder
   defp deps do
     []
+  end
+
+  defp aliases do
+      [run: ["ecto.create --quiet", "ecto.migrate", "test"]]
   end
 end
