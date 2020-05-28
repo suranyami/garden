@@ -21,7 +21,7 @@ defmodule Garden.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:grovepi, github: "https://github.com/suranyami/grovepi.git", branch: "hdc1080"}
+      {:grovepi, github: "suranyami/grovepi", branch: "hdc1080"}
     ]
   end
 end
